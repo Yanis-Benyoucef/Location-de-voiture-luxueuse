@@ -55,7 +55,7 @@ class UpdateProfile
         $updateStmt->bindValue(':id', $this->userID, PDO::PARAM_INT);
         $updateStmt->execute();
 
-        header("Location: profile.php");
+        header("Location: ../profile.php");
         exit();
     }
 

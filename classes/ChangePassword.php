@@ -38,7 +38,7 @@ class ChangePassword
             </form>
         </main>
         <?php
-        require_once 'layout/footer.php';
+        require_once '../layout/footer.php';
     }
 
     private function handlePasswordChange()
@@ -63,7 +63,7 @@ class ChangePassword
             $updatePasswordStmt->bindValue(':id', $this->userID, PDO::PARAM_INT);
             $updatePasswordStmt->execute();
 
-            header("Location: profile.php");
+            header("Location: ../profile.php");
             exit();
         } else {
             echo "L'ancien mot de passe est incorrect.";

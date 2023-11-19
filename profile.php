@@ -38,7 +38,7 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
     <br>
     <!-- liens vers mes classes -->
     <a href="classes/UpdateProfile.php?id=<?php echo $userData['id']; ?>">Modifier le profil</a>
-    <a href="ChangePassword.php?id=<?php echo $userData['id']; ?>">Modifier le mot de passe</a>
+    <a href="classes/ChangePassword.php?id=<?php echo $userData['id']; ?>">Modifier le mot de passe</a>
 </main>
 
 
