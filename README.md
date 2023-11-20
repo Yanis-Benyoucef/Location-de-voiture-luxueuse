@@ -2,10 +2,12 @@
 
 Salut ! Alors, dans mon projet de site de location de voitures luxueuses, j'ai mis en place plusieurs fonctionnalités pour rendre l'expérience utilisateur vraiment sympa. Permettez-moi de vous présenter quelques-unes des pages clés et de vous expliquer comment certaines de ces fonctions importantes fonctionnent.
 
-Vous devez récupérer la base de donnée ([luxury_cars.sql]) pour pouvoir débuter. 
+
+- Vous devez récupérer la base de donnée ([luxury_cars.sql]) pour pouvoir débuter. 
 
 ! Ne commencez pas sans faire cette étape !
-Vous devez supprimer temporairement dans votre SGBD la value (ONLY_FULL_GROUP_BY) dans la variable 'sql_mode', ceci est requis permettre la fonctionnalité d'affichages des véhicules. Le problème viens d'une restriction SQL et non de mon projet.
+
+Vous devez supprimer temporairement dans votre SGBD la value (ONLY_FULL_GROUP_BY) dans la variable 'sql_mode', ceci est requis pour permettre la fonctionnalité d'affichages des véhicules. Le problème viens d'une restriction SQL et non de mon projet.
 
 
 # Présentation des pages :
@@ -31,7 +33,7 @@ La page de connexion (login.php) permet aux utilisateurs de se connecter à leur
 
 - (Un compte de test est mis à disposition pour les utilisateurs. Ne modifiez pas les données de ce compte pour permettre à d'autres bêta-testeurs de l'utiliser.)
 
-- Identifiant : 'test'
+- Email : 'test@gmail.com'
 - Mot de passe: '1234'. 
 
 
@@ -72,7 +74,7 @@ C'est ça, en gros ! Une gestion des réservations simple et efficace pour rendr
 
 
 # 'ChangePassword.php'
-![handlePasswordChange()](/codesnap/password.png)
+![password](/codesnap/password.png)
 
 1. Maintenant, passons à la gestion du changement de mot de passe. Quand vous décidez de changer votre mot de passe, le code vérifie d'abord si l'ancien mot de passe que vous avez donné correspond bien à celui stocké dans la base de données. Si c'est le cas, il met à jour votre mot de passe et vous redirige vers votre page de profil. Simple et sécurisé !
 
